@@ -10,4 +10,7 @@
 
 @interface Card : NSObject
 
+- (void)setCardValue:(NSNumber *)value;
+- (void)setCardSuit:(NSString *)suit;
+
 @end

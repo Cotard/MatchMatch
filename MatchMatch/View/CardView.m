@@ -11,6 +11,7 @@
 @interface CardView ()
 
 @property (weak, nonatomic) IBOutlet UILabel *labelCardContents;
+@property (weak, nonatomic) IBOutlet UIButton *buttonTapCard;
 
 @end
 
@@ -25,6 +26,8 @@
         UIView *view = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil] firstObject];
         view.frame = self.bounds;
         [self addSubview:view];
+        [self.buttonTapCard setBackgroundImage:[UIImage imageNamed:@"card_back"] forState:UIControlStateNormal];
+        [self.buttonTapCard setBackgroundImage:[UIImage new] forState:UIControlStateSelected];
     }
     
     return self;
@@ -36,6 +39,10 @@
     }
     
     self.labelCardContents.text = contents;
+}
+
+- (IBAction)buttonTapCardClicked:(UIButton *)sender {
+    self.buttonTapCard.selected = !self.buttonTapCard.selected;
 }
 
 @end

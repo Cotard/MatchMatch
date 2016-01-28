@@ -63,7 +63,7 @@
 #pragma mark - Cards methods
 
 - (void)addCard:(Card *)card {
-    if ([self.playingCards containsObject:card]) {
+    if ([self.deckOfCards containsObject:card]) {
         return;
     }
     
@@ -71,7 +71,7 @@
 }
 
 - (void)removeCard:(Card *)card {
-    if (![self.playingCards containsObject:card]) {
+    if (![self.deckOfCards containsObject:card]) {
         return;
     }
     

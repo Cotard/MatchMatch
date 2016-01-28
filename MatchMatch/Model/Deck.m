@@ -13,24 +13,33 @@ const int kNumberOfCards = 52;
 
 @interface Deck ()
 
-@property (strong, nonatomic) NSArray *cards;
+@property (strong, nonatomic) NSMutableArray *cards;
 
 @end
 
 @implementation Deck
 
-- (instancetype)init {
-    self = [[Deck alloc] init];
-    
-    return self;
-}
-
 - (NSArray *)cards {
     if (!_cards) {
-        _cards = @[];
+        _cards = [NSMutableArray new];
+        for (int i = 0; i < [Card suitsOfCards].count; i++) {
+            for (int j = 0; j < [Card valuesOfCards].count; j++) {
+                Card *card = [Card new];
+                [card setCardSuit:[[Card suitsOfCards] objectAtIndex:i]];
+                [card setCardValue:[[Card valuesOfCards] objectAtIndex:j]];
+                [_cards addObject:card];
+            }
+        }
     }
     return _cards;
 }
 
+- (Card *)randomCard {
+    if (!_cards.count) {
+        return nil;
+    }
+    
+    return _cards[arc4random() % _cards.count];
+}
 
 @end

@@ -13,7 +13,6 @@
 @property (strong, nonatomic) NSString *value;
 @property (strong, nonatomic) NSString *suit;
 
-
 @property (nonatomic, getter=isChosen) BOOL chosen;
 @property (nonatomic, getter=isMatched) BOOL matched;
 
@@ -31,18 +30,12 @@
     _suit = suit;
 }
 
-- (NSArray *)valuesOfCards {
-    if (!_valuesOfCards) {
-        _valuesOfCards = @[@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"V",@"Q",@"K",@"A"];
-    }
-    return _valuesOfCards;
++ (NSArray *)valuesOfCards {
+    return @[@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"V",@"Q",@"K",@"A"];;
 }
 
-- (NSArray *)suitsOfCards {
-    if (!_suitsOfCards) {
-        _suitsOfCards = @[@"♠",@"♥",@"♦",@"♣"];
-    }
-    return _suitsOfCards;
++ (NSArray *)suitsOfCards {
+    return @[@"♠",@"♥",@"♦",@"♣"];
 }
 
 #pragma mark - Gameplay

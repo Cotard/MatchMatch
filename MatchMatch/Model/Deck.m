@@ -18,6 +18,20 @@
 
 @implementation Deck
 
+- (instancetype)initWithCardsCount:(NSUInteger)count {
+    self = [super init];
+    
+    if (self) {
+        _playingCards = [self randomCardsCount:count];
+    }
+    
+    return self;
+}
+
+- (Card *)playingCardForIndex:(NSUInteger)index {
+    return [self.playingCards objectAtIndex:index];
+}
+
 - (NSArray *)deckOfCards {
     if (!_deckOfCards) {
         NSMutableArray *cards = [NSMutableArray new];
@@ -36,20 +50,22 @@
 }
 
 - (Card *)randomCard {
-    int randomIndex = arc4random() % _deckOfCards.count;
-    return _deckOfCards[randomIndex];
+    int randomIndex = arc4random() % self.deckOfCards.count;
+    return self.deckOfCards[randomIndex];
 }
 
-- (void)initWithCardsCount:(NSUInteger)count {
+- (NSMutableArray *)randomCardsCount:(NSUInteger)count {
     if (!count) {
-        return;
+        return nil;
     }
     
-    _playingCards = [NSMutableArray new];
+    NSMutableArray *randomCards = [NSMutableArray new];
 
     for (NSUInteger i = 0; i < count; i++) {
-        [_playingCards addObject:[self randomCard]];
+        [randomCards addObject:[self randomCard]];
     }
+    
+    return randomCards;
 }
 
 @end

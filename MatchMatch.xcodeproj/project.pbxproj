@@ -10,7 +10,8 @@
 		CE1FCC181C581FD8005D1439 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FCC171C581FD8005D1439 /* Card.m */; };
 		CE1FCC211C5827BF005D1439 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FCC201C5827BF005D1439 /* Deck.m */; };
 		CE1FCC251C582925005D1439 /* PlayingGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FCC241C582925005D1439 /* PlayingGameViewController.m */; };
-		CE6392D41C5A2BB2009777A6 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6392D31C5A2BB2009777A6 /* Card.xib */; };
+		CE6392D41C5A2BB2009777A6 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6392D31C5A2BB2009777A6 /* CardView.xib */; };
+		CE6392D81C5A3612009777A6 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6392D71C5A3612009777A6 /* CardView.m */; };
 		CEEADAA61C581E040065C921 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEADAA51C581E040065C921 /* main.m */; };
 		CEEADAA91C581E050065C921 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEADAA81C581E050065C921 /* AppDelegate.m */; };
 		CEEADAAF1C581E050065C921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEADAAD1C581E050065C921 /* Main.storyboard */; };
@@ -25,7 +26,9 @@
 		CE1FCC201C5827BF005D1439 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
 		CE1FCC231C582925005D1439 /* PlayingGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingGameViewController.h; path = Controller/PlayingGameViewController.h; sourceTree = "<group>"; };
 		CE1FCC241C582925005D1439 /* PlayingGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingGameViewController.m; path = Controller/PlayingGameViewController.m; sourceTree = "<group>"; };
-		CE6392D31C5A2BB2009777A6 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Card.xib; path = View/Card.xib; sourceTree = "<group>"; };
+		CE6392D31C5A2BB2009777A6 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardView.xib; path = View/CardView.xib; sourceTree = "<group>"; };
+		CE6392D61C5A3612009777A6 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardView.h; path = View/CardView.h; sourceTree = "<group>"; };
+		CE6392D71C5A3612009777A6 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardView.m; path = View/CardView.m; sourceTree = "<group>"; };
 		CEEADAA11C581E040065C921 /* MatchMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEADAA51C581E040065C921 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEEADAA71C581E040065C921 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,7 +99,9 @@
 		CE6392D51C5A2C2A009777A6 /* Card */ = {
 			isa = PBXGroup;
 			children = (
-				CE6392D31C5A2BB2009777A6 /* Card.xib */,
+				CE6392D31C5A2BB2009777A6 /* CardView.xib */,
+				CE6392D61C5A3612009777A6 /* CardView.h */,
+				CE6392D71C5A3612009777A6 /* CardView.m */,
 			);
 			name = Card;
 			sourceTree = "<group>";
@@ -200,7 +205,7 @@
 				CEEADAB41C581E050065C921 /* LaunchScreen.storyboard in Resources */,
 				CEEADAB11C581E050065C921 /* Assets.xcassets in Resources */,
 				CEEADAAF1C581E050065C921 /* Main.storyboard in Resources */,
-				CE6392D41C5A2BB2009777A6 /* Card.xib in Resources */,
+				CE6392D41C5A2BB2009777A6 /* CardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6392D81C5A3612009777A6 /* CardView.m in Sources */,
 				CE1FCC211C5827BF005D1439 /* Deck.m in Sources */,
 				CE1FCC251C582925005D1439 /* PlayingGameViewController.m in Sources */,
 				CEEADAA91C581E050065C921 /* AppDelegate.m in Sources */,

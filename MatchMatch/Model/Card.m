@@ -10,8 +10,6 @@
 
 @interface Card ()
 
-@property (weak, nonatomic) IBOutlet UILabel *labelCardContents;
-
 @property (copy, nonatomic) NSString *value;
 @property (copy, nonatomic) NSString *suit;
 
@@ -23,6 +21,9 @@
 
 @implementation Card
 
+@synthesize value = _value;
+@synthesize suit = _suit;
+
 #pragma mark - Setters/Getters
 
 - (void)setCardValue:(NSString *)value {
@@ -33,12 +34,12 @@
     _suit = suit;
 }
 
-- (void)setLabelContents:(NSString *)contents {
-    if (!contents) {
-        return;
-    }
-    
-    self.labelCardContents.text = contents;
+- (NSString *)value {
+    return _value;
+}
+
+- (NSString *)suit {
+    return _suit;
 }
 
 #pragma mark - Class methods

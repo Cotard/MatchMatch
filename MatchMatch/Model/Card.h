@@ -6,13 +6,14 @@
 //  Copyright © 2016 user. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 @interface Card : NSObject
 
 - (void)setCardValue:(NSString *)value;
 - (void)setCardSuit:(NSString *)suit;
-- (void)setLabelContents:(NSString *)contents;
+- (NSString *)value;
+- (NSString *)suit;
 
 + (NSArray *)valuesOfCards;
 + (NSArray *)suitsOfCards;

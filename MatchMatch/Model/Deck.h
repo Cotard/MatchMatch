@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Card;
 
 @interface Deck : NSObject
+
+- (instancetype)initWithCardsCount:(NSUInteger)count;
+- (Card *)playingCardForIndex:(NSUInteger)index;
 
 @end

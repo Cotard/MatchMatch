@@ -18,19 +18,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ucg-D8-xO2" customClass="CardView">
-                                <rect key="frame" x="86" y="64" width="70" height="104"/>
+                                <rect key="frame" x="86" y="34" width="70" height="104"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOj-W0-Vfg" customClass="CardView">
-                                <rect key="frame" x="164" y="64" width="70" height="104"/>
+                                <rect key="frame" x="164" y="34" width="70" height="104"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3P-9D-K0u" customClass="CardView">
-                                <rect key="frame" x="242" y="64" width="70" height="104"/>
+                                <rect key="frame" x="242" y="34" width="70" height="104"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xex-gX-TgD" customClass="CardView">
-                                <rect key="frame" x="8" y="64" width="70" height="104"/>
+                                <rect key="frame" x="8" y="34" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qXS-VL-EgK" customClass="CardView">
+                                <rect key="frame" x="86" y="164" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Da-yG-gda" customClass="CardView">
+                                <rect key="frame" x="164" y="164" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRz-mG-unr" customClass="CardView">
+                                <rect key="frame" x="242" y="164" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ajo-uw-aDW" customClass="CardView">
+                                <rect key="frame" x="8" y="164" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uML-YJ-wYf" customClass="CardView">
+                                <rect key="frame" x="86" y="297" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57m-Nv-SzL" customClass="CardView">
+                                <rect key="frame" x="164" y="297" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESC-Mj-IxR" customClass="CardView">
+                                <rect key="frame" x="242" y="297" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gDW-bE-2TK" customClass="CardView">
+                                <rect key="frame" x="8" y="297" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y22-pp-FfB" customClass="CardView">
+                                <rect key="frame" x="86" y="429" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MD-QN-OTa" customClass="CardView">
+                                <rect key="frame" x="164" y="429" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFY-hi-yux" customClass="CardView">
+                                <rect key="frame" x="242" y="429" width="70" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8y-6u-cuN" customClass="CardView">
+                                <rect key="frame" x="8" y="429" width="70" height="104"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -41,6 +89,18 @@
                         <outletCollection property="playingCards" destination="Ucg-D8-xO2" id="DRC-UO-CXA"/>
                         <outletCollection property="playingCards" destination="jOj-W0-Vfg" id="OVw-Cf-c6K"/>
                         <outletCollection property="playingCards" destination="E3P-9D-K0u" id="oII-Xs-Ths"/>
+                        <outletCollection property="playingCards" destination="Ajo-uw-aDW" id="41H-te-hXa"/>
+                        <outletCollection property="playingCards" destination="qXS-VL-EgK" id="fh1-jr-Vih"/>
+                        <outletCollection property="playingCards" destination="2Da-yG-gda" id="Kjh-yr-pXu"/>
+                        <outletCollection property="playingCards" destination="QRz-mG-unr" id="8Pi-9n-Xp8"/>
+                        <outletCollection property="playingCards" destination="gDW-bE-2TK" id="1ch-jN-97R"/>
+                        <outletCollection property="playingCards" destination="uML-YJ-wYf" id="uHf-k4-akQ"/>
+                        <outletCollection property="playingCards" destination="57m-Nv-SzL" id="NNX-OY-8OM"/>
+                        <outletCollection property="playingCards" destination="ESC-Mj-IxR" id="8s1-T6-pqj"/>
+                        <outletCollection property="playingCards" destination="d8y-6u-cuN" id="wPt-Ii-3BP"/>
+                        <outletCollection property="playingCards" destination="Y22-pp-FfB" id="qCF-F0-rXh"/>
+                        <outletCollection property="playingCards" destination="7MD-QN-OTa" id="65A-0d-FZH"/>
+                        <outletCollection property="playingCards" destination="EFY-hi-yux" id="cfI-c9-QVo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

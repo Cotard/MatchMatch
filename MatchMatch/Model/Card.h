@@ -10,7 +10,10 @@
 
 @interface Card : NSObject
 
-- (void)setCardValue:(NSNumber *)value;
+@property (strong, nonatomic) NSArray *valuesOfCards;
+@property (strong, nonatomic) NSArray *suitsOfCards;
+
+- (void)setCardValue:(NSString *)value;
 - (void)setCardSuit:(NSString *)suit;
 
 @end

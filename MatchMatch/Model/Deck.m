@@ -13,6 +13,8 @@ const int kNumberOfCards = 52;
 
 @interface Deck ()
 
+@property (strong, nonatomic) NSArray *cards;
+
 @end
 
 @implementation Deck
@@ -22,5 +24,13 @@ const int kNumberOfCards = 52;
     
     return self;
 }
+
+- (NSArray *)cards {
+    if (!_cards) {
+        _cards = @[];
+    }
+    return _cards;
+}
+
 
 @end

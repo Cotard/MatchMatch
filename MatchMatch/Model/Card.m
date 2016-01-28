@@ -10,11 +10,14 @@
 
 @interface Card ()
 
-@property (strong, nonatomic) NSString *value;
-@property (strong, nonatomic) NSString *suit;
+@property (weak, nonatomic) IBOutlet UILabel *labelCardContents;
+
+@property (copy, nonatomic) NSString *value;
+@property (copy, nonatomic) NSString *suit;
 
 @property (nonatomic, getter=isChosen) BOOL chosen;
 @property (nonatomic, getter=isMatched) BOOL matched;
+
 
 @end
 
@@ -29,6 +32,16 @@
 - (void)setCardSuit:(NSString *)suit {
     _suit = suit;
 }
+
+- (void)setLabelContents:(NSString *)contents {
+    if (!contents) {
+        return;
+    }
+    
+    self.labelCardContents.text = contents;
+}
+
+#pragma mark - Class methods
 
 + (NSArray *)valuesOfCards {
     return @[@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"V",@"Q",@"K",@"A"];;

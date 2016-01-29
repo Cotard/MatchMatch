@@ -23,6 +23,7 @@
 
 @synthesize value = _value;
 @synthesize suit = _suit;
+@synthesize chosen = _chosen;
 
 #pragma mark - Setters/Getters
 
@@ -34,12 +35,20 @@
     _suit = suit;
 }
 
+- (void)setChosen:(BOOL)isChosen {
+    _chosen = isChosen;
+}
+
 - (NSString *)value {
     return _value;
 }
 
 - (NSString *)suit {
     return _suit;
+}
+
+- (BOOL)isChosen {
+    return _chosen;
 }
 
 #pragma mark - Class methods

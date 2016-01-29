@@ -29,7 +29,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="110" height="171"/>
                     <state key="normal" backgroundImage="card_back"/>
                     <connections>
-                        <action selector="buttonTapCardClicked:" destination="-1" eventType="touchUpInside" id="yeN-zJ-Txx"/>
+                        <action selector="buttonTapCardClicked:" destination="-1" eventType="touchUpInside" id="Zgr-LB-7iB"/>
                     </connections>
                 </button>
             </subviews>

@@ -19,13 +19,6 @@
 
 #pragma mark - Lifecycle
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    
-    [self.buttonTapCard setBackgroundImage:[UIImage imageNamed:@"card_back"] forState:UIControlStateNormal];
-    [self.buttonTapCard setBackgroundImage:[UIImage new] forState:UIControlStateSelected];
-}
-
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     
@@ -33,9 +26,15 @@
         UIView *view = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil] firstObject];
         view.frame = self.bounds;
         [self addSubview:view];
+        [self setImagesForButtonTapCard];
     }
     
     return self;
+}
+
+- (void)setImagesForButtonTapCard {
+    [self.buttonTapCard setBackgroundImage:[UIImage imageNamed:@"card_back"] forState:UIControlStateNormal];
+    [self.buttonTapCard setBackgroundImage:[UIImage new] forState:UIControlStateSelected];
 }
 
 #pragma mark - Public Interface

@@ -12,8 +12,11 @@
 
 - (void)setCardValue:(NSString *)value;
 - (void)setCardSuit:(NSString *)suit;
+- (void)setChosen:(BOOL)isChosen;
+
 - (NSString *)value;
 - (NSString *)suit;
+- (BOOL)isChosen;
 
 + (NSArray *)valuesOfCards;
 + (NSArray *)suitsOfCards;

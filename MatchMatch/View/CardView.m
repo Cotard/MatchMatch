@@ -26,12 +26,18 @@
         UIView *view = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil] firstObject];
         view.frame = self.bounds;
         [self addSubview:view];
-        [self.buttonTapCard setBackgroundImage:[UIImage imageNamed:@"card_back"] forState:UIControlStateNormal];
-        [self.buttonTapCard setBackgroundImage:[UIImage new] forState:UIControlStateSelected];
+        [self setImagesForButtonTapCard];
     }
     
     return self;
 }
+
+- (void)setImagesForButtonTapCard {
+    [self.buttonTapCard setBackgroundImage:[UIImage imageNamed:@"card_back"] forState:UIControlStateNormal];
+    [self.buttonTapCard setBackgroundImage:[UIImage new] forState:UIControlStateSelected];
+}
+
+#pragma mark - Public Interface
 
 - (void)setLabelContents:(NSString *)contents {
     if (!contents) {
@@ -41,8 +47,14 @@
     self.labelCardContents.text = contents;
 }
 
+- (void)setButtonTapCardSelected:(BOOL)isSelected {
+    self.buttonTapCard.selected = isSelected;
+}
+
+#pragma mark - IBActions
+
 - (IBAction)buttonTapCardClicked:(UIButton *)sender {
-    self.buttonTapCard.selected = !self.buttonTapCard.selected;
+    [self.delegate cardViewDidClick:self];
 }
 
 @end
